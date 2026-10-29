@@ -1,3 +1,3 @@
 # Adresse actuelle du site (première ligne non vide, sans #).
 # Modifie uniquement cette ligne quand le site change d'adresse.
-https://senpai-stream.surf
+https://karadov.com
