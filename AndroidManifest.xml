@@ -10,7 +10,7 @@
     <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
 
     <application
-        android:label="Cinejoy (Firefox)"
+        android:label="films (contacter mt si ne marche pas)"
         android:icon="@drawable/icon"
         android:banner="@drawable/icon"
         android:allowBackup="false">
