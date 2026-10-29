@@ -15,7 +15,7 @@ import java.net.URL;
 
 /**
  * Lanceur sans interface : récupère l'adresse actuelle du site (fichier url.txt
- * du dépôt GitHub), la mémorise, puis l'ouvre dans Firefox.
+ * du dépôt GitHub), la mémorise, puis l'ouvre dans TV Bro.
  * Hors ligne ou GitHub injoignable : dernière adresse connue, sinon DEFAULT_URL.
  */
 public class MainActivity extends Activity {
@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
     private static final String CONFIG_URL = "__CONFIG_URL__";
     private static final String DEFAULT_URL = "https://cinejoy.pk/";
     private static final String[] BROWSERS = {
-            "org.mozilla.firefox", "org.mozilla.firefox_beta", "com.phlox.tvwebbrowser.gecko"
+            "com.phlox.tvwebbrowser.gecko", "com.phlox.tvwebbrowser"
     };
 
     @Override
@@ -87,7 +87,7 @@ public class MainActivity extends Activity {
         }
         if (!started) {
             Toast.makeText(getApplicationContext(),
-                    "Firefox introuvable : installe-le d'abord", Toast.LENGTH_LONG).show();
+                    "TV Bro introuvable : installe-le d'abord", Toast.LENGTH_LONG).show();
         }
         finish();
     }
