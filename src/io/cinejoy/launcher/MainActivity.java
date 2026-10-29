@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
     private static final String CONFIG_URL = "__CONFIG_URL__";
     private static final String DEFAULT_URL = "https://cinejoy.pk/";
     private static final String[] BROWSERS = {
-            "org.mozilla.firefox", "org.mozilla.firefox_beta", "org.mozilla.fenix"
+            "org.mozilla.firefox", "org.mozilla.firefox_beta", "com.phlox.tvwebbrowser.gecko"
     };
 
     @Override
