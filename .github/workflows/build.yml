@@ -1,0 +1,21 @@
+name: Build APK
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['url.txt', 'README.md']
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Build
+        run: bash build.sh "https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/url.txt"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CinejoyLauncher
+          path: CinejoyLauncher.apk
